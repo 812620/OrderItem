@@ -14,11 +14,11 @@ spec:
     spec:
       containers:
       - name: orderitem
-        image:  practicecr.azurecr.io/orderitem:latest
+        image:  menuitem.azurecr.io/orderitem:latest
         ports:
         - containerPort: 8080
       imagePullSecrets:
-      - name: pc1sn
+      - name: orderitemsn
 
 ---
 apiVersion: v1

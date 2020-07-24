@@ -22,7 +22,7 @@ namespace OrderItem.Controllers
         [HttpPost("{menuitemid}")]
         public Cart POST(int menuitemid)
         {
-            string token = GetToken("http://52.143.250.249/api/Token");
+            string token = GetToken("https://localhost:44326/api/Token");
 
             Cart orderItem = new Cart();
             orderItem.Id = 1;
@@ -38,7 +38,7 @@ namespace OrderItem.Controllers
         }
         static string GetToken(string url)
         {
-            var user = new User { Name="Jignesh",Password="Jignesh123"};
+            var user = new User { Name="Anjali",Password="Anjali210"};
             var json = JsonConvert.SerializeObject(user);
             var data = new StringContent(json, Encoding.UTF8, "application/json");
 
@@ -59,7 +59,7 @@ namespace OrderItem.Controllers
             using (var client = new HttpClient())
             {
                 
-                client.BaseAddress = new Uri("http://52.143.250.249/");
+                client.BaseAddress = new Uri("https://localhost:44326/");
                 client.DefaultRequestHeaders.Clear();
                 client.DefaultRequestHeaders.Add("Authorization", "Bearer " + token);
                 client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
@@ -69,14 +69,10 @@ namespace OrderItem.Controllers
                 response = client.GetAsync("api/MenuItem/"+id).Result;
 
 
-                if (response.IsSuccessStatusCode)
-                {
+               
                     string name1 = response.Content.ReadAsStringAsync().Result;
                     name = JsonConvert.DeserializeObject<string>(name1);
-                }
-                else
-                    name = null;
-
+                
             }
             return name;
         }

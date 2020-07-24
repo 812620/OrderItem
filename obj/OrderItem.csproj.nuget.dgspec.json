@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Cognizant\\truyum-WebApi\\OrderItem\\OrderItem.csproj": {}
+    "C:\\Users\\User\\source\\repos\\OrderItem\\OrderItem.csproj": {}
   },
   "projects": {
-    "D:\\Cognizant\\truyum-WebApi\\OrderItem\\OrderItem.csproj": {
+    "C:\\Users\\User\\source\\repos\\OrderItem\\OrderItem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Cognizant\\truyum-WebApi\\OrderItem\\OrderItem.csproj",
+        "projectUniqueName": "C:\\Users\\User\\source\\repos\\OrderItem\\OrderItem.csproj",
         "projectName": "OrderItem",
-        "projectPath": "D:\\Cognizant\\truyum-WebApi\\OrderItem\\OrderItem.csproj",
-        "packagesPath": "C:\\Users\\deepa\\.nuget\\packages\\",
-        "outputPath": "D:\\Cognizant\\truyum-WebApi\\OrderItem\\obj\\",
+        "projectPath": "C:\\Users\\User\\source\\repos\\OrderItem\\OrderItem.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\source\\repos\\OrderItem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\deepa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

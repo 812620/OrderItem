@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: orderitem
-        image:  practicecr.azurecr.io/p1repos:latest
+        image:  practicecr.azurecr.io/p2repos:latest
         ports:
         - containerPort: 8080
       imagePullSecrets:

@@ -58,8 +58,8 @@ namespace OrderItem.Controllers
             string name;
             using (var client = new HttpClient())
             {
-                
-                client.BaseAddress = new Uri("https://13.89.143.113/");
+
+                client.BaseAddress = new Uri("http://13.89.143.113/");
                 client.DefaultRequestHeaders.Clear();
                 client.DefaultRequestHeaders.Add("Authorization", "Bearer " + token);
                 client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
